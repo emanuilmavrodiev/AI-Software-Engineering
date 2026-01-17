@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elegant Cuts - Hairdresser</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Elegant Cuts - professional hairdresser services. Book an appointment for cuts, color, styling and more." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Elegant Cuts</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <nav id="primary-nav" class="primary-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <h1>Beautiful hair. Beautiful you.</h1>
+        <p>Professional cuts, colour and styling in a welcoming salon. Book your transformation today.</p>
+        <a class="btn" href="#contact">Book an Appointment</a>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery container">
+      <h2>Gallery — Wallpapers</h2>
+      <p class="muted">A selection of salon-inspired wallpapers. Click to enlarge.</p>
+      <div class="gallery-grid">
+        <button class="gallery-item" data-index="0" aria-label="Open wallpaper 1">
+          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&q=60&auto=format&fit=crop" alt="Salon interior" />
+        </button>
+        <button class="gallery-item" data-index="1" aria-label="Open wallpaper 2">
+          <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&q=60&auto=format&fit=crop" alt="Hair styling close-up" />
+        </button>
+        <button class="gallery-item" data-index="2" aria-label="Open wallpaper 3">
+          <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?w=800&q=60&auto=format&fit=crop" alt="Colour palette" />
+        </button>
+        <button class="gallery-item" data-index="3" aria-label="Open wallpaper 4">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=60&auto=format&fit=crop" alt="Blow dry styling" />
+        </button>
+      </div>
+    </section>
+
+    <section id="services" class="services container">
+      <h2>Our Services</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Haircut & Styling</h3>
+          <p>Precision cutting tailored to your look, with wash and professional styling.</p>
+        </article>
+        <article class="card">
+          <h3>Colour & Highlights</h3>
+          <p>Full colour, balayage, highlights and toning with top-quality products.</p>
+        </article>
+        <article class="card">
+          <h3>Treatment & Care</h3>
+          <p>Nourishing treatments and scalp care to keep your hair healthy and shiny.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h2>About Elegant Cuts</h2>
+      <p>We are a team of experienced stylists passionate about helping you feel confident. Our salon uses cruelty-free products and focuses on personalised service.</p>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact & Booking</h2>
+      <form id="contact-form" class="contact-form">
+        <label>
+          Name
+          <input type="text" name="name" id="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" id="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" id="message" rows="4" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Elegant Cuts. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
