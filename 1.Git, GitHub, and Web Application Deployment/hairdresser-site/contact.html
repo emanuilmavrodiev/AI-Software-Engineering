@@ -26,21 +26,38 @@
   <main>
     <section class="contact container">
       <h2>Contact & Booking</h2>
-      <form id="contact-form" class="contact-form">
-        <label>
-          Name
-          <input type="text" name="name" id="name" required />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" id="email" required />
-        </label>
-        <label>
-          Message
-          <textarea name="message" id="message" rows="4" required></textarea>
-        </label>
-        <button class="btn" type="submit">Send Message</button>
-      </form>
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" id="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" id="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" id="message" rows="4" required></textarea>
+          </label>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+
+        <aside class="contact-info">
+          <h3>Visit or call</h3>
+          <p><strong>Elegant Cuts</strong><br/>123 Salon Street<br/>Cityville, CV1 2AB</p>
+          <p><strong>Phone:</strong> (0123) 456-7890<br/><strong>Email:</strong> hello@elegantcuts.example</p>
+
+          <h4>Opening hours</h4>
+          <ul>
+            <li>Mon–Fri: 9:00 — 19:00</li>
+            <li>Sat: 9:00 — 17:00</li>
+            <li>Sun: Closed</li>
+          </ul>
+
+          <p class="muted">We confirm all bookings by email. For urgent same-day requests call the salon.</p>
+        </aside>
+      </div>
     </section>
   </main>
 

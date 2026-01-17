@@ -13,10 +13,11 @@ body{font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue
 .nav-toggle{display:none;background:transparent;border:0;font-size:1.25rem}
 
 .hero{position:relative;padding:5rem 0;background-image:url('https://images.unsplash.com/photo-1524515976656-8d3b6a7c9138?w=1400&q=60&auto=format&fit=crop');background-size:cover;background-position:center}
-.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.25),rgba(0,0,0,0.35));}
-.hero-inner{text-align:center;position:relative;color:#fff;z-index:1}
+/* remove dark overlay to keep hero light */
+.hero::before{display:none}
+.hero-inner{text-align:center;position:relative;color:var(--dark);z-index:1}
 .hero h1{font-size:2.4rem;margin-bottom:0.5rem;letter-spacing:0.2px}
-.hero p{color:rgba(255,255,255,0.9);margin-bottom:1rem;max-width:720px;margin-left:auto;margin-right:auto}
+.hero p{color:rgba(0,0,0,0.6);margin-bottom:1rem;max-width:720px;margin-left:auto;margin-right:auto}
 .btn{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;padding:0.75rem 1.1rem;border-radius:10px;text-decoration:none;box-shadow:0 6px 18px rgba(181,101,167,0.18);transition:transform .15s ease,box-shadow .15s ease}
 .btn:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(181,101,167,0.18)}
 
