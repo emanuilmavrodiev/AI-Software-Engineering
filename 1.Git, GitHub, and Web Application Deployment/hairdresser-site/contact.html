@@ -3,14 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Elegant Cuts - Hairdresser</title>
+  <title>Contact — Elegant Cuts</title>
   <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Elegant Cuts - professional hairdresser services. Book an appointment for cuts, color, styling and more." />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="#">Elegant Cuts</a>
+      <a class="logo" href="index.html">Elegant Cuts</a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
       <nav id="primary-nav" class="primary-nav">
         <ul>
@@ -25,12 +24,23 @@
   </header>
 
   <main>
-    <section id="home" class="hero">
-      <div class="container hero-inner">
-        <h1>Beautiful hair. Beautiful you.</h1>
-        <p>Professional cuts, colour and styling in a welcoming salon. Explore our services, view the gallery, or get in touch to book an appointment.</p>
-        <a class="btn" href="contact.html">Book an Appointment</a>
-      </div>
+    <section class="contact container">
+      <h2>Contact & Booking</h2>
+      <form id="contact-form" class="contact-form">
+        <label>
+          Name
+          <input type="text" name="name" id="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" id="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" id="message" rows="4" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
     </section>
   </main>
 

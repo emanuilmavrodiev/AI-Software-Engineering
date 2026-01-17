@@ -2,11 +2,12 @@
 
 This folder contains a small static website for a hairdresser salon.
 
-Files:
-- `index.html` — main page with header, navigation, hero, services, about, contact and footer.
-- `styles.css` — responsive styles.
-- `script.js` — mobile nav toggle and simple contact form handling.
-- `script.js` — mobile nav toggle, contact form handling and gallery lightbox.
+ Files:
+ - `index.html` — home (hero) page.
+ - `services.html` — services page.
+ - `about.html` — about page.
+ - `gallery.html` — gallery page with wallpapers and lightbox.
+ - `contact.html` — contact page with a contact form.
 
 How to run:
 Open `index.html` in your browser. On macOS you can run:
